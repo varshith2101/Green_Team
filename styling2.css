@@ -1,11 +1,11 @@
 
 @font-face {
-    font-family: 'tanthewhistling';  /* Name it anything you want */
-    src: url('font_dump/106ccd1b14f16971c332e309cec7d90b.ttf') format('truetype');
+    font-family: 'myfont';  /* Name it anything you want */
+    src: url('myfont.otf') format('opentype');
 }
 
 *{
-    font-family: 'tanthewhistling';
+    font-family: 'myfont';
 }
 /* General styles */
 body {
