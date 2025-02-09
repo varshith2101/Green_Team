@@ -1,0 +1,327 @@
+
+@font-face {
+    font-family: 'tanthewhistling';  /* Name it anything you want */
+    src: url('font_dump/106ccd1b14f16971c332e309cec7d90b.ttf') format('truetype');
+}
+
+*{
+    font-family: 'tanthewhistling';
+}
+/* General styles */
+body {
+    overflow-x: hidden;
+    font-family: 'tanthewhistling';
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #71a086;
+    color: #3c3c3c;
+}
+
+/* Header and navigation */
+header {
+    font-family: 'tanthewhistling';  /* Sets the font family for the header */
+    font-size: 18px;  /* Reduced font size for a thinner header */
+    color: #cbe2c1;  /* Sets the text color in the header */
+    background: #829992;  /* Sets the background color for the header */
+    color: #d45f5f;  /* Sets a different text color for the header (this overrides the previous color) */
+    padding: 0.5rem 0;  /* Adds space around the header content (thinner padding) */
+    text-align: center;  /* Centers the text inside the header */
+    position: sticky;  /* Makes the header stick to the top of the page when scrolling */
+    top: 0;  /* Ensures the header stays at the top */
+    z-index: 1000;  /* Keeps the header on top of other elements when scrolling */
+}
+
+nav ul {
+    list-style: none;  /* Removes the default list bullet points from the navigation */
+    padding: 0;  /* Removes padding from the unordered list */
+    display: flex;  /* Makes the navigation items align in a row */
+    justify-content: center;  /* Centers the navigation items horizontally */
+}
+
+nav ul li {
+    margin: 0 10px;  /* Adds horizontal space between the navigation items */
+}
+
+nav ul li a {
+    color: #71a086;  /* Sets the text color for navigation links */
+    text-decoration: none;  /* Removes the underline from the navigation links */
+    font-weight: none;  /* Makes the navigation text bold or not */
+    padding: 5px 10px;  /* Adds space inside the navigation links */
+    border-radius: 5px;  /* Rounds the corners of the navigation links */
+    transition: background 0.3s;  /* Adds a smooth transition for background color change on hover */
+    font-size: 20px;  /* Sets the font size for navigation links */
+}
+
+nav ul li a:hover {
+    background: #252e2d;  /* Changes the background color of navigation links when hovered */
+}
+
+/* General styles for the navigation */
+nav ul {
+    list-style-type: none;  /* Removes bullet points from the list */
+    margin: 0;  /* Removes the default margin */
+    padding: 0;  /* Removes the default padding */
+    display: flex;  /* Aligns the items in a row */
+}
+
+nav ul li {
+    position: relative;  /* Positions the list items relative to each other for dropdowns */
+}
+
+nav ul li a {
+    text-decoration: none;  /* Removes underline from navigation links */
+    padding: 10px 20px;  /* Adds space inside the navigation links */
+    display: block;  /* Makes the navigation links block-level so they fill the space */
+    color: #cbe2c1;  /* Sets the text color of the navigation links */
+}
+
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #c1d3c9;
+    list-style-type: none;
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.dropdown-menu li a {
+    padding: 10px 20px;
+    color: #71a086;
+    white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* Section styles */
+section {
+    padding: 2rem;
+    text-align: center;
+    margin: auto;
+    max-width: 800px;
+}
+
+#home {
+    background: #71a086;
+    padding: 4rem 2rem;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    color: #252e2d;
+}
+
+#home h3 {
+    font-size: 8pt;
+    color: #252e2d;
+}
+
+#about, #project, #team, #contact {
+    background: #71a086;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Project section */
+#project img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+
+/* Team section */
+.team-member {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    margin: 0.5rem 0;
+    color: #252e2d;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+}
+
+/* background image to the entire index page */
+.home-page {
+    background-image: url('images/Sapsyn.png');
+    background-size: cover;  /* Ensures the image covers the entire page */
+    background-position: bottom;  /* Centers the background image */
+    background-attachment: fixed;  /* Keeps the image fixed while scrolling */
+    height: 100vh;  /* Ensures the background covers the full viewport height */
+    margin: 0;  /* Removes any default margin */
+    padding: 0;  /* Removes any default padding */
+}
+
+/* Apply background image to all pages except index */
+body:not(.home-page) {
+    background-image: url('images/wood.png');  /* Replace with your image path */
+    background-size: cover;  /* Ensures full-page coverage */
+    background-position: center;
+    background-attachment: fixed;  /* Optional: Keeps background fixed */
+}
+
+/* Apply toc only to non-index pages */
+.fixed-banner {
+    position: fixed;  /* Keeps the image and text fixed */
+    top: 56%;  /* Adjust vertical position */
+    left: 11%;  /* Adjust horizontal position */
+    transform: translate(-50%, -50%);  /* Centering */
+    z-index: 999;  /* Ensures it's above other elements */
+}
+
+.fixed-banner img {
+    width: 350px;  /* Adjust size */
+    height: auto;
+}
+
+.fixed-banner .text {
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    top: 30%;
+    left: 22%;
+    color: #394545;
+    font-size: 18px;
+}
+
+.fixed-banner a {
+    text-decoration: none;  /* Removes underline */
+    color: inherit;  /* Inherits the color from the parent */
+    font-weight: bold; /* Makes it bold if needed */
+}
+
+.fixed-banner a:hover {
+    color: #506262; /* Change color on hover if desired */
+}
+
+h1 {
+    scroll-margin-top: 120px; /* Adjust the value as needed */
+}
+
+/*ADDING LABEL*/
+
+body:not(.home-page):not(.index-page) .page-banner {
+    position: relative;  /* Image scrolls with the page */
+    width: 100%;
+    height: auto;  /* Adjust height */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    margin-top: -6%; /* Moves the image down */
+    margin-left: 10%;
+}
+
+body:not(.home-page):not(.index-page) .page-banner img {
+    width: 90%;
+    height: auto;
+    object-fit: contain ;  /* Ensures image fills the banner */
+}
+ 
+.body-container {
+    width: 65%;  /* Adjust width as needed */
+    max-width: 65%;  /* Limits width */
+    margin-top: 5%;
+    margin-left: auto;  /* Pushes box to the right */
+    margin-right: 5%;  /* Adds spacing on the right */
+    background: #efe4ca; 
+    padding: 20px;
+    padding-left: 5%; /*for text*/
+    padding-right: 5%;
+    border-radius: 10px;
+    overflow-wrap: break-word; /* Ensures text doesn't overflow */
+    overflow-x: hidden; /* Ensures no horizontal scroll */
+    font-size: 16pt;
+    color: #8b6455;
+    box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+.body-container h3 {
+    font-size: 12pt; /* Adjust size as needed */
+    color: #8b6455; /* Change to any color you prefer */
+    font-weight: normal; /* Adjust boldness */
+    margin-top: 2pt;
+    margin-bottom: 15px; /* Adds space below h3 */
+    text-align: center; /* Aligns the heading to the left */
+}
+
+.body-container img {
+    width: 100%;  /* Makes images responsive */
+    height: auto;     /* Maintains aspect ratio */
+    display: block;   /* Makes the image behave like a block element */
+    margin: 0 auto;   /* Centers the image horizontally */
+}
+
+.full-width-box {
+    width: 100%;
+    min-height: 200px;
+    font-size: 24pt;
+    margin-top: 5%;
+    padding-left: 30%; /* Text */
+    background: #efe4ca; 
+    color: #8b6455; /* Text color */
+    display: block; /* Prevents extra spacing below */
+    overflow: hidden; /* Prevents extra space from floating elements */
+    box-sizing: border-box; /* Includes padding in width calculation */
+    position: relative; /* Ensures it stays after all content */
+}
+
+.full-width-box p {
+    margin: 1px 0; /* Adds space between the paragraphs */
+}
+
+.full-width-box img {
+    max-width: 95%; /* Adjust image size */
+    height: auto;
+    margin: -30px 0; /* Reduced margin between image and text */
+    display: block; /* Ensures the image aligns correctly */
+}
+
+/* Smaller text for email and address */
+.email, .address {
+    font-size: 16pt; /* Make the font size smaller */
+    color: #6b4f31; /* Optional: Make the text color slightly different */
+}
+
+.second-image {
+    width: 12vw;
+    margin-right: 5%;
+    /* height: auto; */
+    /* margin-top: 80px; */
+    /* margin-left: auto; */
+    /* margin-right: 5%; */
+    display: block; /* Makes the image a block-level element */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
