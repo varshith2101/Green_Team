@@ -6,6 +6,31 @@
     <title>iGEM Team Wiki</title>
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styling2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <style>
+        /* Button Style */
+        .redirect-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .redirect-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
 </head>
 <body class="home-page">
 
@@ -63,8 +88,10 @@
             </ul>
         </nav>
     </header> 
-
-    <a href="..styling2.css"
+    <div>
+        
+    </div>
+    <button class="redirect-btn" onclick="window.location.href='story.html';">Go to Story Page</button>  
     
 </body>
 </html>
