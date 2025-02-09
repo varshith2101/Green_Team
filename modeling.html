@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="styling2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Project</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description.html">Description</a></li>
+                        <li><a href="background.html">Background</a></li>
+                        <li><a href="design.html">Design</a></li>
+                        <li><a href="proof-of-concept.html">Proof of Concept</a></li>
+                        <li><a href="implementation.html">Implementation</a></li>
+                        <li><a href="biosafety.html">Biosafety</a></li>
+                        <li><a href="contribution.html">Contribution</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Wet Lab</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="engineering.html">Engineering</a></li>
+                        <li><a href="materials.html">Materials</a></li>
+                        <li><a href="notebook.html">Notebook</a></li>
+                        <li><a href="protocols.html">Protocols</a></li>
+                        <li><a href="measurement.html">Measurement</a></li>
+                        <li><a href="lab-safety.html">Lab Safety</a></li>
+                        <li><a href="results.html">Results</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Dry Lab</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="modeling.html">Modelling</a></li>
+                        <li><a href="parts.html">Parts</a></li>
+                    </ul>
+                </li>
+                <li><a href="education.html">Education</a></li>
+                <li class="dropdown">
+                    <a href="#">Human Practices</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ihp.html">IHP</a></li>
+                        <li><a href="outreach.html">Outreach</a></li>
+                        <li><a href="collaboration.html">Collaboration</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Team</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="meet-the-team.html">Meet the Team</a></li>
+                        <li><a href="attributions.html">Attributions</a></li>
+                        <li><a href="medals.html">Medals</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header> 
+
+    <div class="fixed-banner">
+        <img src="images/toc.png" alt="Background">
+        <div class="text">
+            <ul>
+            <li><a href="#Introduction">Introduction</a></li>
+            <li><a href="#Docking">Docking</a></li>
+            <li><a href="Referencesmodelling">References</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-banner">
+        <img src="images/modelling.png" alt="Banner">
+    </div>
+
+    <div class="body-container">
+
+        <h1 id="Introduction">Introduction</h1>        
+        <p>Since the structure of TCP2 in Santalum album was unavailable on any database, we ran sequence alignment of TCP2 in Arabidopsis thaliana with the entire sandalwood genome. We got a 73% identity match [1].
+            </p>
+        <img src="images/beigestripes.jpg" alt="Sample Image 1" width="200">        
+        <h3>Fig: Sequence alignment of TCP2 in A.thaliana with the entire sandalwood genome
+        </h3>
+        <p>To show that the TCP2 gene is not conserved throughout plant organisms, we ran a blast sequence for TCP2 in Arabidopsis thaliana. We checked for the identity percentage with other TCP2 sequences from other plant organisms in NCBI. Results confirmed that the TCP2 gene has high sequence variability throughout plant organism genomes and is not conserved. This confirmed that the gene sequence aligned with TCP2 in Arabidopsis thaliana, hitting a 73% identity, is the TCP2 sequence in sandalwood. 
+        </p>
+        <p>Another blast was done for the potential TCP2 nucleotide sequence and results showed multiple TCP2 genes of various plant organisms with high identity %, confirming the sequence. 
+        </p>
+        <p>The structure for TCP2 in Arabidopsis thaliana (Q93V43) was obtained from UniProt. The structure for SAP11 in Candidatus Phytoplasma asteris was predicted from AlphaFold, using the sequence we obtained from NCBI (WP_342386607.1). 
+        </p>
+        <p>The structure for TCP2 in Santalum album was also predicted using AlphaFold, using the gene sequence we obtained from the sequence alignment. The TCP2 sequence from the sandalwood genome was codon optimised and then the nucleotide sequence was converted to FASTA amino acid sequence.
+        </p>
+        <p>This FASTA sequence was then put in Swiss Model and AlphaFold predicted, giving us the structure for TCP2 in Santalum album. 
+        </p>
+
+        <h1 id="Docking">Docking</h1> 
+        <p>TCP2 in Arabidopsis thaliana and TCP2 in Santalum album were both individually docked with SAP11 in Candidatus Phytoplasma asteris (Asters Yellows Witches broom) to compare the binding affinities.
+            The docking score directly correlates with binding affinity. More negative Gibbs' free energy implies
+            stronger binding. The docking scores are shown below. 
+            </p>
+
+        <h3>Fig: The docked model of TCP2 in Santalum album and SAP11 from Candidatus Phytoplasma asteris
+        </h3>
+
+        <img src="images/Modelling9.jpg" alt="Sample Image 1" width="200">        
+        <h3>Fig: Docking score of TCP2 in Santalum album and SAP11 from Candidatus Phytoplasma asteris</h3>
+
+        <h1 id="Referencesmodelling">References</h1> 
+        <h3>
+            <ul>
+                <li>1. Altschul, S. F., Madden, T. L., Schäffer, A. A., Zhang, J., Zhang, Z., Miller, W., & Lipman, D. J. (1997). Gapped BLAST and PSI-BLAST: A new generation of protein database search programs. Nucleic Acids Research, 25(17), 3389–3402. https://doi.org/10.1093/nar/25.17.3389
+                </li>
+                <li>2. Pecher, P., Moro, G., Canale, M. C., Capdevielle, S., Singh, A., MacLean, A., Sugio, A., Kuo, C.-H., Lopes, J. R. S., & Hogenhout, S. A. (2019). Phytoplasma SAP11 effector destabilization of TCP transcription factors differentially impact development and defence of Arabidopsis versus maize. PLoS Pathogens, 15(9), e1008035. https://doi.org/10.1371/journal.ppat.1008035
+                </li>
+            </ul>
+    </div> 
+    
+    <div class="full-width-box">
+        
+        <p class="sponsors">SPONSORS</p>
+        <img src="images/logos.png" alt="Image Description">
+        <div class="footer-container">
+            <div>
+        <p class="contact-us">CONTACT US</p>
+        <p class="email">Email: manipalbiomachines.igem@gmail.com</p>
+            
+        <p class="address"> Address: Project laboratory, Academic Block-2, Manipal Institute of Technology, MAHE, Eshwar Nagar, Manipal, Udupi, Karnataka, India - 576104</p></div>
+        <img src="images/logo.png" alt="Image Description" class="second-image"></div>
+    </div>
+
+</body>
+</html>
